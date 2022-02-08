@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--在文件上传时form表单的数据传输方式必须为post，并且编码格式必须为multipart/form-data，否则服务器端是无法获取传输的文件数据-->
+    <form enctype="multipart/form-data" method="post" action="http://127.0.0.1:80/upload_files">
+        <div>
+             <input type="file" name="file" multiple="multiple">
+        </div>
+        <div>
+            <input type="text" name="type" value="0">
+        </div>
+        
+        <div>
+            <input type="submit" value="提交">
+        </div>
+    </form>
+</body>
+</html>
